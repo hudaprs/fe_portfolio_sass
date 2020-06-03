@@ -1,3 +1,42 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden; }
+
+.btn-light, .btn-main, .btn-dark {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  transition: all 1s;
+  cursor: pointer; }
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333; }
+
+.btn-main {
+  background-color: #ffbc00;
+  color: #fff; }
+
+.btn-dark {
+  background-color: #333;
+  color: #fff; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ffbc00; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -20,3 +59,41 @@ h4 {
 
 img {
   width: 100%; }
+
+#home-header {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  text-transform: uppercase;
+  color: #fff; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: border-color 0.5s;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem; }
+    #main-nav a:hover {
+      border-color: #ffbc00; }
+    #main-nav a.current {
+      border-color: #ffbc00; }
+
+#header-content {
+  padding-top: 15%;
+  text-align: center; }
+  #header-content h1 {
+    font-size: 4rem;
+    line-height: 1.3; }

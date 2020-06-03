@@ -1,0 +1,52 @@
+.container {
+  max-width: $website-width;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+// Buttons
+%btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %btn;
+    background-color: $light-color;
+    color: #333;
+  }
+
+  &-main {
+    @extend %btn;
+    background-color: $main-color;
+    color: #fff;
+  }
+
+  &-dark {
+    @extend %btn;
+    background-color: $dark-color;
+    color: #fff;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
