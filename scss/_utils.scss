@@ -42,15 +42,6 @@ input[class^="btn-"]:hover {
   background-color: $main-color;
 }
 
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
 // Paddings
 .py {
   &-1 {
@@ -83,6 +74,27 @@ input[class^="btn-"]:hover {
   }
 }
 
+// Background Colors
+.bg-dark {
+  background-color: $dark-color;
+  color: set-text-color($dark-color);
+}
+
+.bg-light {
+  background-color: $light-color;
+  color: set-text-color($light-color);
+}
+
+.bg-main {
+  background-color: $main-color;
+  color: set-text-color($main-color);
+}
+
+.bg-medium {
+  background-color: $medium-color;
+  color: set-text-color($medium-color);
+}
+
 // Section title
 .section-title {
   font-size: 2rem;
@@ -100,4 +112,15 @@ input[class^="btn-"]:hover {
   background-color: $main-color;
   margin: 0 auto 1rem auto;
   display: block;
+}
+
+// Lead Paragraph
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+// Centering Text
+.text-center {
+  text-align: center;
 }

@@ -30,13 +30,6 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #ffbc00; }
 
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem; }
-
-.text-center {
-  text-align: center; }
-
 .py-1 {
   padding: 1rem 0; }
 
@@ -61,6 +54,22 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.bg-dark {
+  background-color: #333;
+  color: #fff; }
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #000; }
+
+.bg-main {
+  background-color: #ffbc00;
+  color: #fff; }
+
+.bg-medium {
+  background-color: #ccc;
+  color: #000; }
+
 .section-title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -75,6 +84,13 @@ input[class^="btn-"]:hover {
   background-color: #ffbc00;
   margin: 0 auto 1rem auto;
   display: block; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
 
 * {
   padding: 0;
@@ -136,6 +152,11 @@ img {
   #header-content h1 {
     font-size: 4rem;
     line-height: 1.3; }
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px #ffbc00 solid; }
 
 #home-a .specials {
   display: grid;
@@ -200,6 +221,28 @@ img {
     border-radius: 50%;
     padding: 1rem;
     transition: all 1s; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimg bio bio" "award1 award2 award3";
+  grid-gap: 1.2rem; }
+  #about-a .about-info .about-img {
+    grid-area: bioimg; }
+  #about-a .about-info .bio {
+    grid-area: bio;
+    padding: 0.8rem;
+    border-left: 3px solid #ffbc00; }
+  #about-a .about-info .award-1 {
+    grid-area: award1; }
+  #about-a .about-info .award-2 {
+    grid-area: award2; }
+  #about-a .about-info .award-3 {
+    grid-area: award3; }
+  #about-a .about-info .award-1 .fas,
+  #about-a .about-info .award-2 .fas,
+  #about-a .about-info .award-3 .fas {
+    color: #ffbc00;
+    margin: 1rem; }
 
 #main-footer {
   background-color: #333;
