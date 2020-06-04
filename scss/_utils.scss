@@ -82,3 +82,22 @@ input[class^="btn-"]:hover {
     margin: 4rem 0;
   }
 }
+
+// Section title
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+// Bottom Line
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: $main-color;
+  margin: 0 auto 1rem auto;
+  display: block;
+}

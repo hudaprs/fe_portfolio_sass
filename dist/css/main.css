@@ -61,6 +61,21 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  padding-bottom: 0.5rem; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: #ffbc00;
+  margin: 0 auto 1rem auto;
+  display: block; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -147,3 +162,64 @@ img {
       background-color: #ccc; }
     #home-b .stats div:nth-child(even) {
       background-color: #f4f4f4; }
+
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center; }
+  #home-c .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    background-color: #ffbc00;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 1s; }
+  #home-c .process-icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    transition: all 1s;
+    border-radius: 50%; }
+    #home-c .process-icon:hover {
+      background-color: #ffbc00;
+      color: #fff;
+      height: 90px;
+      width: 90px;
+      line-height: 90px; }
+      #home-c .process-icon:hover .process-step {
+        background-color: #333;
+        color: #fff; }
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      padding: 0.5rem;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center; }
+      #main-footer .footer-content .social .fab:hover {
+        background-color: #ffbc00;
+        color: #fff; }
